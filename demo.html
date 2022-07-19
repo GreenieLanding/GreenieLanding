@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenie Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    
+        body {
+          margin:0;
+          background-image: linear-gradient(#f4fcc4, #f4fcc4, #dff67a, #dff67a, #d9f74d, #d9f74d, #daf948);
+          }
+        
+        .box1 {
+            max-width: 800px;
+            width:75%;
+            padding-bottom:3%;
+            background:#c6e537;
+            border-radius: 15px;
+            margin-bottom: 14%;
+            margin-top: 4%;
+            }
+
+        .demo-title {
+          margin-top:30%;
+        }
+
+        .row {
+            margin-top: 25px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            align-items: baseline;
+        }
+
+        /* .col_half {
+            width: 50%;
+            float: left;
+        } */
+
+        .form-group {
+          margin-left: 22px;
+        }
+
+
+        .form-control, .form-select{
+          max-width:70%;
+          border: 1px solid #000;
+        }
+
+        input {
+            /* font-size: 1em; */
+            /* border-radius: 10px; */
+            /* padding-left: 10px; */
+            margin-bottom: 20px;
+            color: #205707;
+            }
+
+        /* p {
+            color: #205707;
+            font-family: sans-serif;
+            margin-bottom: 15px;
+            } */
+
+        select {
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #205707;
+            padding-left: 25px;
+            }
+     
+        #submit-btn {
+            background: #1B5300;
+            border-radius: 10px;
+            width: 45%;
+            height: 71px;
+            margin-left: 40px;
+            margin-top: 50px;
+            border: 1px solid #000;
+            font-weight: bold;
+            }
+            
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            }
+    
+        .navbar {
+            background-color: #eefbb6;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* position: fixed; */
+      
+            }
+    
+            .greenie-image {
+          position: relative;
+          top: 370px;
+          width: 14%;
+          position: fixed;
+
+              
+            }
+
+        li {
+          font-weight: bold;
+        }
+
+        label{
+          color: #1B5300;
+        }
+
+        
+        .nav-link  {
+          color: #1B5300 !important;
+          
+        }
+
+        .nav-lastitem {
+          background-color:#cee29b;
+          border-radius: 12px;
+          padding: 0px 20px;
+        }
+
+        .demo-statement{
+          color: red !important;
+          font-size: 16px; 
+          line-height: 19px;
+        }
+
+          @media (min-width: 200px) and (max-width:500px){
+
+            .greenie-image{
+              position: relative;
+          top: 10px;
+          width: 30%;
+
+              
+              
+
+            }
+          }
+
+            
+          @media (min-width: 500px) and (max-width:1140px){
+
+            .greenie-image{
+            position: relative;
+            top: 10px;
+            width: 30%;
+
+  
+  
+
+}
+
+          
+
+          
+            
+
+          }
+        
+        
+        </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light nav-boder" style="
+        z-index: 20;
+        background-color: #eefbb6;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      ">
+      <div class="container-fluid" >
+        <a href="main.html" style="margin-left: 8%; align-self: center; cursor: pointer;">
+          <img style="height: 66px; width: 269px;" src="images/Greenie Web Logo Header.png" alt="Greenie Web"/>
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent" style="margin-right: 8%; margin-left: 1%; ">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li style="margin-right: 15px;" class="nav-item list_item_divide"><a class="nav-link" href="main.html#aboutus">About us</a></li>
+            <li style="margin-right: 15px;" class="nav-item list_item_divide"><a class="nav-link" href="main.html#importance">Importance of Greenifying</a></li>
+            <li style="margin-right: 15px;" class="nav-item list_item_divide"><a class="nav-link" href="main.html#howdoes">How does it work?</a></li>
+            <li class="nav-item list_item_divide nav-lastitem">
+                <a class="nav-link " href='main.html'> Request Demo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------------- -->
+    <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 6%; margin-top: 8%;">
+      <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+          <h3 class="demo-title" style="text-align: left; font-weight: 700; font-size: 37px;">Sign Up to <br> Request Demo</h3>
+          <br>
+          <img class="img-fluid greenie-image"  style="margin-top: 20px; max-width: 80%; " src="images/Greenie Monster with shadow.png"/>
+      </div>
+      
+      <div class="box1">
+        <form  action ="aboutus.html" method="POST">
+          <div class="row">
+            <div class="form-group col" >
+              <label for="firstName"><p><b>First Name</b><b style="color: red">*</b></p></label>
+              <input type="text" class="form-control" id="FirstName" aria-describedby="" placeholder="Your first name" required style="width: 310px; height: 67px;"/>
+            </div>
+            <div class="form-group col" >
+              <label for="Last Name"><p></p><b>Last Name</b><b style="color: red">*</b></p></label>
+              <input type="text" class="form-control" id="LastName" placeholder="Your last name" required style="width:310px; height: 67px;"/>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-left: 38px;">
+            <label for="Work Email"><p><b>Work Email</b><b style="color: red">*</b></p></label>
+            <input type="email" class="form-control" id="WorkEmail" placeholder="example@projectflux.co" required style="width:690px; height: 67px; ">
+          </div>
+          <div class="row">
+          <div class="form-group col">
+            <label for="Phone Number"><p><b>Phone Number</b><b style="color: red">*</b></p></label>
+            <input type="text" class="form-control" id="PhoneNumber" placeholder="(555) 555-5555" required style="width: 310px; height: 67px;">
+          </div>
+          <div class="form-group col">
+            <label for="Country"><p><b>Country</b><b style="color: red">*</b></p></label>
+            <input type="text" class="form-control" id="Country" placeholder="Your country" required style="width: 310px; height: 67px;">
+          </div>
+        </div>
+          <div class="form-group" style="margin-left: 38px;">
+            <label for="Company"><p><b>Company</b><b style="color: red">*</b></p></label>
+            <input type="text" class="form-control" id="Company" placeholder="Project Flux (Global) Pte. Ltd." required style="    width: 690px; height: 67px; ">
+          </div>
+          
+          <div class="row">
+            <div class="form-group col">
+              <label for="Department"><p><b>Department</b></p></label>
+              <select class="form-select" id="Department" style="width: 310px; height: 67px; padding-left: 40px;">
+                  <option value="choose">Please select one</option>
+                  <option value="it">Dev/Engineering/IT</option>
+                  <option value="sales">Sales</option>
+                  <option value="support">Support & Success</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="finance">Finance/Legal/Ops</option>
+                  <option value="hr">HR/People</option>
+                  <option value="strategy">Strategy/Biz Dev</option>
+              </select>
+            </div>
+            <div class="form-group col">
+              <label for="Role"><p><b>Role</b></p></label>
+              <select class="form-select" id="Role" style="width: 310px; height: 67px; padding-left: 40px;">
+                  <option value="choose">Please select one</option>
+                  <option value="cxo">CXO</option>
+                  <option value="vp">VP</option>
+                  <option value="director">Director</option>
+                  <option value="manager">Manager</option>
+                  <option value="contributor">Contributor</option>
+              </select>
+            </div>
+          </div>
+        
+          <div style="margin-left: 40px; width: auto; height: 19px; "><p class="demo-statement" >Fields marked with an asterisk (*) are required.</p></div>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
